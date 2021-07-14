@@ -40,7 +40,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true # 资源目录，hexo new 的时候自动创建对应目录的文件夹
 relative_link: false
 future: true
 highlight:
@@ -102,4 +102,6 @@ theme: fluid
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/daixiulei/daixiulei.github.io.git
+  branch: main
