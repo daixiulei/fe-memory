@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Poor
+title: One For Me
 subtitle: '认知有限，知识无穷'
 description: '用有限的一生探索无穷的世界'
 keywords: '前端'
@@ -31,7 +31,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :year-:month-:day-:title.md # File name of new posts
+new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
@@ -40,7 +40,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: true # 资源目录，hexo new 的时候自动创建对应目录的文件夹
+post_asset_folder: true # 资源目录，hexo new 的时候自动创建对应的资源目录
 relative_link: false
 future: true
 highlight:
@@ -97,7 +97,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: fluid
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
