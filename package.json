@@ -7,7 +7,9 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
-    "preserver": "node ./lib/index.js"
+    "preserver": "node ./lib/index.js",
+    "predeploy": "npm run build",
+    "prebuild": "node ./lib/index.js"
   },
   "hexo": {
     "version": "5.4.2"
