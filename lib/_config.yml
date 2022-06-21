@@ -1,0 +1,8 @@
+# 图片存放目录
+top_image_dir: /images/24
+
+# 模板存放目录
+generate_image_template: ./template/generateTopImage.js
+
+# 生成的js目录
+generate_image_script_position: /js/randomTopImage.js
