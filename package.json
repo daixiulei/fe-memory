@@ -9,12 +9,17 @@
     "server": "hexo server",
     "preserver": "node ./lib/index.js",
     "predeploy": "npm run build",
-    "prebuild": "node ./lib/index.js"
+    "prebuild": "node ./lib/index.js",
+    "editor": "node editor/bin/www",
+    "editor:dev": "./node_modules/.bin/nodemon editor/bin/www",
+    "editor:prd": "pm2 start editor/bin/www"
   },
   "hexo": {
     "version": "5.4.2"
   },
   "dependencies": {
+    "co": "^4.6.0",
+    "debug": "^2.6.3",
     "hexo": "^5.4.2",
     "hexo-deployer-git": "^3.0.0",
     "hexo-generator-archive": "^1.0.0",
@@ -28,7 +33,19 @@
     "hexo-server": "^2.0.0",
     "hexo-theme-butterfly": "^3.8.4",
     "hexo-theme-landscape": "^0.0.3",
+    "jade": "~1.11.0",
     "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.1",
+    "koa-mount": "^4.0.0",
+    "koa-onerror": "^4.2.0",
+    "koa-router": "^10.1.1",
+    "koa-static": "^5.0.0",
+    "koa-views": "^8.0.0",
     "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }
