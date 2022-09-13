@@ -8,5 +8,6 @@ module.exports = {
     clientDistEntry: path.join(__dirname, '../../dist/client/entry-client.js'),
     serverDistEntry: path.join(__dirname, '../../dist/server/entry-server.js'),
     serverDevEntry: path.join(__dirname, '../../client/src/entry-server'),
+    postBaseDir: path.join(__dirname, '../../../source/_posts'),
   },
 };

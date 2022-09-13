@@ -1,0 +1,33 @@
+.article {
+    height: 100%;
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+
+    &-tree {
+        box-sizing: border-box;
+        padding: 16px 16px;
+        width: 300px;
+        background-color: #fff;
+        height: 100%;
+    }
+
+    &-main {
+        margin-left: 16px;
+        flex: 1;
+        display: flex;
+
+        &__editor {
+            flex: 1;
+            margin-right: 8px;
+            background-color: #fff;
+            padding: 16px;
+        }
+
+        &__preview {
+            flex: 1;
+            background-color: #fff;
+        }
+    }
+}

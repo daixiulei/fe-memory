@@ -20,5 +20,10 @@ code {
 html, body, #root {
   height: 100%;
   width: 100%;
+  font-size: 14px;
 }
 
+:root {
+  --bg-color: #f5f8fc;
+  --text-color-hover: #1e80ff;
+}

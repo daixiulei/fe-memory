@@ -7,6 +7,7 @@ const indexRoute = require('./routes/index');
 const apiRoute = require('./routes/api');
 const viewRoute = require('./routes/view');
 const createRenderServer = require('./utils/createRenderServer');
+const watch = require('./utils/fileWatcher');
 
 const app = new Koa();
 
@@ -17,6 +18,8 @@ app.use(bodyparser());
 app.use(logger());
 
 createRenderServer(app);
+
+watch.runWatcher();
 
 app.use(indexRoute.routes());
 app.use(mount('/api', apiRoute.middleware()));

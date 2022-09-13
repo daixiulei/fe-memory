@@ -8,6 +8,9 @@ export default defineConfig({
     outDir: '../dist',
   },
   css: {
+    modules: {
+      scopeBehaviour: 'local',
+    },
     preprocessorOptions: {
       less: {},
     },

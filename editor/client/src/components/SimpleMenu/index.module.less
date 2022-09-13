@@ -1,0 +1,30 @@
+.simple-menu {
+    background-color: #f5f8fc;
+    border-radius: 2px;
+    height: 48px;
+    box-sizing: border-box;
+    padding: 8px 0;
+    display:flex;
+}
+
+.menu-item {
+    margin: 0 6px;
+    height: 32px;
+    line-height: 32px;
+    background: transparent;
+    color: #333;
+    padding: 0 16px;
+    border-radius: 16px;
+    cursor: pointer;
+
+
+    &:hover {
+        background-color: #fff;
+        color: var(--text-color-hover);
+    }
+
+    &__active {
+        background-color: #fff;
+        color: var(--text-color-hover);
+    }
+}

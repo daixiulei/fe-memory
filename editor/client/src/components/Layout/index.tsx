@@ -8,11 +8,9 @@ interface ComponentProps {
   header?: any;
 }
 
-export default ({ children, sider, header }: ComponentProps) => {
-  console.log(sider);
+export default ({ children, header }: ComponentProps) => {
   return (
     <div className="layout">
-      {/* <div className="layout-sider">{sider}</div> */}
       <div className="layout-header">{header}</div>
       <div className="layout-content">{children}</div>
     </div>

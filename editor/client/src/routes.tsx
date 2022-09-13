@@ -9,7 +9,6 @@ export default () => {
     <Routes>
       <Route path="/" element={<Article />}></Route>
       <Route path="/template" element={<Template />}></Route>
-      <Route path="/article" element={<Article />}></Route>
     </Routes>
   );
 };
